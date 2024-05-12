@@ -1,72 +1,108 @@
-Sure, here's a README.md file for the provided code:
+## EXERCISE 1: AUTOMATION
+## PART 1 FOR ADDING DETAILS
+## Automated Testing Script for Kloudship Application
+This script is designed to automate the testing of certain functionalities within the Kloudship application using Selenium WebDriver. Kloudship is an application that presumably deals with shipping logistics.
 
-# Selenium Automation Script for KloudShip Application
+## Setup Instructions
+Install Selenium WebDriver: Ensure you have Selenium WebDriver installed in your Python environment. You can install it via pip:
 
-This Python script automates the process of adding a new package to the KloudShip application using Selenium WebDriver and the Chrome browser.
-
-## Prerequisites
-
-Before running the script, ensure you have the following:
-
-- Python installed (version 3.6 or later)
-- Google Chrome browser installed
-- Chrome WebDriver installed and added to the system PATH
-
-You can download the Chrome WebDriver from the official website: https://sites.google.com/a/chromium.org/chromedriver/downloads
-
-## Installation
-
-1. Clone or download the repository to your local machine.
-2. Install the required Python packages by running the following command:
-
-```
+## Copy code
 pip install selenium
-```
+Install ChromeDriver: ChromeDriver is necessary for Selenium to interact with the Chrome browser. Download the appropriate version of ChromeDriver for your Chrome browser from here and make sure it's in your system's PATH.
 
-## Usage
+Update Credentials: Replace the placeholder email address and password with valid credentials in the script.
 
-1. Open the `Test case 1 - Automation.py` file in a text editor or Python IDE.
-2. Ensure that the application URL (`https://ecs-qa.kloudship.com`) and login credentials are correct.
-3. Run the script using the following command:
+Run the Script: Execute the Python script in your preferred environment.
 
-```
-python "Test case 1 - Automation.py"
-```
+## Script Overview
+Logging in: The script navigates to the Kloudship login page and logs in using the provided credentials.
 
-The script will perform the following actions:
+Navigation: After successful login, it navigates to the "Package Types" page.
 
-1. Launch the Google Chrome browser.
-2. Navigate to the KloudShip application URL.
-3. Log in to the application using the provided credentials.
-4. Navigate to the "Package Types" page.
-5. Click the "Add Manually" button.
-6. Enter the package details:
-   - Name: "Shubham Singh"
-   - Length: Random integer between 1 and 9
-   - Width: Random integer between 1 and 9
-   - Height: Random integer between 1 and 9
-7. Submit the form by clicking the check button and then the more_vert button.
-8. Verify that the package is added successfully (verification logic can be added to the script).
-9. Log out of the application.
-10. Close the browser instance.
+Adding a Package Manually: It clicks on the "Add Manually" button, fills out the form with randomly generated package dimensions, and submits it.
+
+Verification: (To be implemented) Currently, there's a placeholder for verification logic to confirm that the package is added successfully. Depending on the application's behavior, you may need to customize this part.
+
+Logging out: Finally, it logs out of the application.
+
+## Dependencies
+Python 3.x
+Selenium WebDriver
+ChromeDriver
 
 ## Notes
+This script assumes a stable internet connection and responsiveness from the Kloudship application. Ensure your network is stable before running the script.
 
-- The script uses the Selenium WebDriver library to automate the browser interactions.
-- It utilizes explicit wait conditions to handle potential synchronization issues and wait for elements to be present and clickable.
-- The locators used in the script are based on the application's DOM structure at the time of writing. If the application's UI changes, the locators may need to be updated accordingly.
-- The script generates random integer values for the package dimensions (length, width, and height) between 1 and 9.
-- After the package is added, the verification logic can be implemented in the commented section of the script.
+It's recommended to run this script in a controlled testing environment to avoid unintended actions on a live application.
 
-## Troubleshooting
+The script's functionality may need adjustments based on changes in the application's UI or workflow.
 
-If you encounter any issues while running the script, ensure that:
+Feel free to enhance the script with additional verification steps, error handling, or logging, as per your testing requirements.
 
-- Google Chrome and the Chrome WebDriver are installed correctly.
-- The Chrome WebDriver is added to the system PATH.
-- The application URL and login credentials are correct.
-- The locators used in the script match the application's DOM structure.
 
-If the issue persists, you can try increasing the timeout values or adjusting the locators based on the application's behavior.
 
-Feel free to modify the script or add additional functionality as per your requirements.
+
+## PART 2 FOR DELETING DETAILS
+## Selenium Automated Testing Script for Kloudship Application
+This Selenium script is designed to automate the testing of certain functionalities within the Kloudship application. Kloudship is a web-based application for managing packages and shipments.
+
+## Purpose
+The purpose of this script is to automate the testing of the following actions:
+
+- Logging into the Kloudship application.
+- Navigating to the Package Types page.
+- Selecting and deleting a recent package type.
+- Verifying the successful deletion of the package type.
+- Logging out of the application.
+
+## Prerequisites
+Before running the script, ensure you have the following:
+
+- Python installed on your system.
+- Selenium library installed (pip install selenium).
+- Chrome WebDriver installed and its path configured correctly.
+
+## Usage
+Ensure that the prerequisites are met.
+Modify the script as needed, especially the login credentials.
+Run the script.
+
+## Script Details
+The script logs into the Kloudship application using provided credentials.
+It navigates to the Package Types page.
+It selects the most recent package type and deletes it.
+It verifies the successful deletion of the package type.
+Finally, it logs out of the application.
+
+## Note
+- Ensure that the provided XPaths for locating elements are still valid and up-to-date. If there are changes in the application's UI, you may need to update the XPaths accordingly.
+- This script is a basic example and may require further customization and error handling for use in a production environment.
+
+## Author
+This script was authored by SHUBHAM SINGH.
+
+
+
+
+
+## EXERCISE 3: SQL 
+## SQL Solution for Doctor and Patient Admission Details
+This repository contains SQL queries to extract details about doctors, patients, and their admissions from a database. Below are the descriptions of each query and their purpose.
+
+1. Doctors with Admissions
+Purpose: Retrieves details of doctors who have admissions associated with them.
+
+2. Doctors without Admissions
+Purpose: Retrieves details of doctors who do not have any admissions associated with them.
+
+3. Patients with Incomplete Admissions
+Purpose: Retrieves details of patients whose admissions cannot be completed due to missing doctor details.
+
+- How to Use
+Ensure you have access to the database containing the required tables (Doctors, Admissions, Patients).
+Copy and paste the queries into your SQL client or database management system.
+Execute the queries to retrieve the desired information.
+
+## Note
+- Make sure to replace Doctors, Admissions, and Patients with the actual table names in your database (if necessary).
+- Adjust column names if they differ from the provided queries.

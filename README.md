@@ -26,8 +26,8 @@ Verification: (To be implemented) Currently, there's a placeholder for verificat
 Logging out: Finally, it logs out of the application.
 
 ## Dependencies
-Python 3.x,
-Selenium WebDriver,
+Python 3.x<br>
+Selenium WebDriver<br>
 ChromeDriver
 
 ## Notes

@@ -8,6 +8,7 @@ Install Selenium WebDriver: Ensure you have Selenium WebDriver installed in your
 
 ## Copy code
 pip install selenium.<br>
+
 Install ChromeDriver: ChromeDriver is necessary for Selenium to interact with the Chrome browser. Download the appropriate version of ChromeDriver for your Chrome browser from here and make sure it's in your system's PATH.<br>
 
 Update Credentials: Replace the placeholder email address and password with valid credentials in the script.<br>

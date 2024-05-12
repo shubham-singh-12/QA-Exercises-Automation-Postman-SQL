@@ -7,10 +7,10 @@ This script is designed to automate the testing of certain functionalities withi
 Install Selenium WebDriver: Ensure you have Selenium WebDriver installed in your Python environment. You can install it via pip:
 
 ## Copy code
-pip install selenium
-Install ChromeDriver: ChromeDriver is necessary for Selenium to interact with the Chrome browser. Download the appropriate version of ChromeDriver for your Chrome browser from here and make sure it's in your system's PATH.
+pip install selenium.<br>
+Install ChromeDriver: ChromeDriver is necessary for Selenium to interact with the Chrome browser. Download the appropriate version of ChromeDriver for your Chrome browser from here and make sure it's in your system's PATH.<br>
 
-Update Credentials: Replace the placeholder email address and password with valid credentials in the script.
+Update Credentials: Replace the placeholder email address and password with valid credentials in the script.<br>
 
 Run the Script: Execute the Python script in your preferred environment.
 
@@ -26,8 +26,8 @@ Verification: (To be implemented) Currently, there's a placeholder for verificat
 Logging out: Finally, it logs out of the application.
 
 ## Dependencies
-Python 3.x
-Selenium WebDriver
+Python 3.x,
+Selenium WebDriver,
 ChromeDriver
 
 ## Notes
@@ -79,7 +79,7 @@ Finally, it logs out of the application.
 - This script is a basic example and may require further customization and error handling for use in a production environment.
 
 ## Author
-This script was authored by SHUBHAM SINGH.
+This script was authored by <b>SHUBHAM SINGH<b>.
 
 
 
